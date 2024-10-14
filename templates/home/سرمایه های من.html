@@ -1,0 +1,332 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+       @font-face {
+         font-family: font;
+         src: url(Mikhak-VF[wght\,KSHD\,DSTY].woff2)format(woff2);
+      }
+       body{
+         font-family: font;
+         margin: 0;
+         padding: 0;
+         
+      }
+      body :link{
+         color: #000000;
+      }
+      body :visited{
+         color: #000000;
+      }
+      /* width */
+::-webkit-scrollbar {
+  width: 15px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background-color: #83e4ff;
+  border-radius: 10px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background-image: linear-gradient(180deg, #93C6E7 40%, #30a2ff 60%); 
+     position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px 1px;
+}
+.background{
+   width: auto;
+   height: 657px;
+   background-image: linear-gradient(180deg, #93dce7 40%, #e8da80 60%); 
+   position: relative;
+}
+.div-header{
+         position: absolute;
+         top: -0px;
+         
+         width: 100%;
+         height: 60px;
+         background-color: #93C6E7;
+         border-bottom-left-radius: 40px;
+         border-bottom-right-radius: 40px;
+         box-shadow: rgba(0, 0, 0, 0.314) 0px 0px 15px ;
+   
+      }
+      .div-header2{
+         position: relative;
+         top: -70px;
+         width: 100px;
+         height: 40px;
+         text-align: center;
+         display: table;
+         margin-left: auto;
+         margin-right: auto;
+      }
+      .div-header3{
+         position: relative;
+         top: 10px;
+         width: 200px;
+         height: 40px;
+        background-color: #6d96b1;;
+         text-align: center;
+         margin-left: 30px;
+         border-radius: 20px;
+         box-shadow: #00000055 0px 0px 5px;
+
+      }
+      .a1 {
+         font-size: 20px;
+         position: relative;
+         left: 15px;
+         top: -5px;
+         font-family: font;
+         display: inline-block;
+          text-decoration: none;
+}
+.span-header :hover{
+   transition: all 1s;
+   scale: 1.2;
+}
+.a-1 {
+         font-size: 20px;
+         position: relative;
+         left: -5px;
+         display: inline-block;
+          text-decoration: none;
+}
+.i-1 :hover{
+   transition: all 1s;
+   scale: 1.2;
+}
+.span-header{
+   position: relative;
+   top: 7px;
+   font-size: 20px;
+   left: -20px;
+}
+.div-header4{
+         position: relative;
+         display: inline-block;
+         top: -30px;
+         left: 1080px;
+         width: 200px;
+         height: 40px;
+         background-color: #6d96b1;
+         text-align: center;
+         margin-left: 30px;
+         border-radius: 20px;
+         box-shadow: #00000055 0px 0px 5px;
+}
+.img4{
+   width: 50px;
+   height: 60px;
+   position: relative;
+   top: -10px;
+}
+.div-1{
+ position: relative;
+ top: -70px;
+   margin: auto;
+   padding: auto;
+   width: 90%;
+   height: 570px;
+   background-image: linear-gradient(180deg, #2d81ff 10%, #16fdda 90%);
+   position: relative;
+   border-radius: 20px;
+   box-shadow: #00000055 0px 0px 5px;
+   overflow: auto;
+}
+.div-2{
+   display:table;
+   margin: auto;
+   padding: auto;
+   width: 75%;
+   height: 110px;
+   background-image: linear-gradient(90deg, #dfee7f , #04acd1);    
+   margin-top: 40px;
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   box-shadow: #00000055 0px 0px 5px;
+}
+.div-3{
+   display:table;
+   margin: auto;
+   padding: auto;
+   width: 75%;
+   height: 110px;
+   background-image: linear-gradient(90deg, #dfee7f , #04acd1); 
+   margin-top: 2px;
+   box-shadow: #00000055 0px 0px 5px;
+}
+.div-4{
+   display:table;
+   margin: auto;
+   padding: auto;
+   width: 75%;
+   height: 110px;
+   background-image: linear-gradient(90deg, #dfee7f , #04acd1 ); 
+     margin-top: 2px;
+   margin-bottom: 40px;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   box-shadow: #00000055 0px 0px 5px;
+}
+.span-1{
+   position: relative;
+   top: 16px;
+   margin: auto;
+   padding: auto;
+  display: table;
+   font-size: 25px;
+}
+#i-2{
+   position: relative;
+   left: 85%;
+   margin: 5px;
+   display: inline-block;
+}
+.span-2{
+   position: relative;
+   left: 55%;
+   display: inline-block;
+}
+.button-1{
+   height: 30px;
+   width: 130px;
+   position: relative;
+   right: 120px;
+   top: -50px;
+   border-radius: 20px;
+   background-color: rgb(35, 195, 254);
+   border: none;
+   font-family: font;
+   font-size: 15px;
+}
+.button-2{
+   height: 30px;
+   width: 130px;
+   position: relative;
+   top: -12px;
+   right: 280px;
+   border-radius: 20px;
+   background-color: rgb(247, 92, 214);
+   border: none;
+   font-family: font;
+   font-size: 15px;
+}
+.a-2 :hover{
+   transition: all 0.2s;
+   background-color: #0366b2;
+   color: #fff;
+}
+.a-3 :hover{
+   transition: all 0.2s;
+   background-color: #c8079e;
+   color: #fff;
+}
+   </style>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="سرمایه های من.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="background">
+   <div class="div-header">
+      <div class="div-header3">
+     <span class="span-header"><a class="a1" href="C:\Users\aa\Downloads\ثبت نام.html">پروفایل</a></span> 
+      </div>
+      <div class="div-header4">
+      <i class="i-1"><a class="a-1" href="http://127.0.0.1:8000/">رفتن به خانه  </a></i>
+      </div>
+<div class="div-header2">
+   <img class="img4" src="{% static 'home/images/favpng_r-logo-icon.png' %}">
+</div>
+<div class="div-1">
+   <span class="span-1">سرمایه های من </span>
+   <div class="div-2"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+     <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+     <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-3"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+   <div class="div-4"><i id="i-2" class="fa fa-user-circle-o" style="font-size:100px"></i>
+      <span class="span-2">نام<br>سرمایه<br>توضیحات</span>
+      <a href="#" class="a-2"><button class="button-1">پذیرفتن</button></a>
+      <a href="#" class="a-3"><button class="button-2">نپذیرفتن</button></a>
+   </div>
+</div>
+</div>
+</body>
+</html>

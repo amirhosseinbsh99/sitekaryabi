@@ -1,0 +1,554 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+       /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background-color: #fff;
+  border-radius: 10px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background-image: linear-gradient(180deg, #3ab0ff 10%, #3048ff 90%);   position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px 1px;
+}
+
+      @font-face {
+         /* font-family: font;
+         src: url(Mikhak-VF[wght,KSHD,DSTY].woff2)format(woff2); */
+         font-family: 'font';
+         src: local('font'),
+         url('../../static/home/font/Mikhak-VF[wght,KSHD,DSTY].woff2') format("woff2");
+      }
+      @keyframes anima1 {
+         0%{color: #ffffff;}
+         50%{color: #787878;}
+         100%{color: #000000;}
+      }
+      @keyframes anima2 {
+         0%{rotate: 0;}
+         100%{rotate: 720deg;}
+      }
+      body{
+         font-family: font;
+         margin: 0;
+         padding: 0;
+         
+      }
+      body :link{
+         color: #000000;
+      }
+      body :visited{
+         color: #000000;
+      }
+      .div-background{
+         position: relative;
+         width: auto;
+         height: 555px;
+         background-image: linear-gradient(to bottom , rgb(57, 64, 255) 10%, #38beef 90%);
+      }
+      .div-background1{
+         position: relative;
+         width: auto;
+         top: -350px;
+         height: 1100px;
+         background-image: linear-gradient(to bottom , rgb(57, 64, 255) 10%, rgb(41 225 255));
+      }
+      .div-header{
+         position: absolute;
+         top: -0px;
+         width: 100%;
+         height: 60px;
+         background-color: #3ab0ff;
+         border-bottom-left-radius: 40px;
+         border-bottom-right-radius: 40px;
+         box-shadow: rgba(0, 0, 0, 0.314) 0px 0px 15px ;
+      }
+     
+      .div-header2{
+         position: relative;
+         top: -70px;
+         width: 100px;
+         height: 40px;
+         text-align: center;
+         display: table;
+         margin-left: auto;
+         margin-right: auto;
+         animation-name: anima1;
+         animation-duration: 3s;
+         animation-delay: 1s;
+         animation-iteration-count: unset;
+      }
+      .div-header3{
+         position: relative;
+         top: 10px;
+         width: 200px;
+         height: 40px;
+        background-color: #6d96b1;;
+         text-align: center;
+         margin-left: 30px;
+         border-radius: 20px;
+         box-shadow: #00000055 0px 0px 5px;
+         
+      }
+      .a1 {
+         position: relative;
+         left: 10px;
+         font-size: 20px;
+         display: inline-block;
+          text-decoration: none;
+}
+.a2 {
+         display: inline-block;
+          text-decoration: none;
+          padding-left: 86px;
+}
+.div-header3 :hover{
+   scale: 1.2;
+   transition: all 0.7s;
+}
+.span-header{
+   position: relative;
+   left: 10px;
+   top: 5px;
+}
+.div-header4{
+         position: relative;
+         display: inline-block;
+         top: -61px;
+         left: 1080px;
+         width: 200px;
+         height: 40px;
+         background-color: #6d96b1;
+         text-align: center;
+         margin-left: 30px;
+         border-radius: 20px;
+         box-shadow: #00000055 0px 0px 5px;
+}
+.div-header4 :hover{
+   scale: 1.2;
+   transition: all 0.7s;
+}
+a{
+   text-decoration: none;
+}
+.a2 :hover{
+   display: inline-block;
+   background-color: #93C6E7;
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+.img3{
+   position: relative;
+   left: 60%;
+   width: 30%;
+   height:10%;
+}
+.img4{
+   width: 50px;
+   height: 60px;
+   position: relative;
+   top: -40px;
+   animation-name: anima2;
+   animation-duration: 3s;
+   animation-delay: 0.2s;
+   animation-iteration-count: unset;
+}
+.h2-1{
+         margin-left: auto;
+         margin-right: auto;
+         width: 300px;
+         position: relative;
+         top: 200px;
+         right: 200px;
+}
+.img3{
+   position: relative;
+   top: -200px;
+   left: 65%;
+   width: 500px;
+   height: 500px;
+}
+.span1{
+   position: relative;
+   top: 200px;
+   right: 200px;
+   font-size: 25px;
+}
+.div1{
+   position: relative;
+   top: 150px;
+   border-radius: 10px;
+   width: 1200px;
+   height: 500px;
+   background-color: #126e82;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: #1386d2 5px 5px 8px;
+   text-align: center;
+   transform: rotate(-3deg);
+}
+.div2{
+   position: relative;
+   top: -350px;
+   border-radius: 10px;
+   width: 1200px;
+   height: 500px;
+   background-color: #41cceb;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: #1386d2 5px 5px 8px;
+   text-align: center;
+}
+.span2{
+   font-size: 25px;
+   position: relative;
+   top: -80px;
+}
+.div3{
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+}
+.img5{
+   position: relative;
+   top: -100px;
+   width: 300px;
+   height: 200px;
+   display: table;
+   border-radius: 50%;
+   box-shadow: #093b36 2px 2px 13px ;
+   margin-left: auto;
+   margin-right: auto;
+}
+.div25{
+   width: auto;
+   height: 100px;
+   background-color: #0D1282;
+   transform: translate(0px, 400px);
+}
+.div24{
+   width: auto;
+   height: 400px;
+   background-image: linear-gradient(180deg, #252525, #0D1282);
+   transform: translate(0px, -300px);
+}
+.img6{
+   width: 50px;
+   height: 60px;
+   position: relative;
+   left: 650px;
+   top: -150px;
+}
+.img7{
+   width: 200px;
+   height: 170px;
+   border-radius: 20%;
+   position: relative;
+  
+}
+.button2{
+   position: relative;
+   top: 150px;
+   left: 50px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.button3{
+   position: relative;
+   top: 150px;
+   left: 100px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.button4{
+   position: relative;
+   top: 150px;
+   left: 150px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.span8{
+   display: table;
+   margin: auto;
+   padding: auto;
+   direction: rtl;
+   position: relative;
+   top: -130px;
+   left: 300px;
+   color: #fff;
+}
+.img8{
+   position: relative;
+top: 190px;
+right: 150px;
+   width: 80px;
+   height: 80px;
+}
+.a3 :hover{
+   transition: all 1.5s;
+   scale: 1.2;
+}
+.svg1{
+   position: relative;
+   
+  
+}
+#myImg {
+   left: 70px;
+    top: -30px;
+    position: relative;
+    width: 55px;
+    background-color: #ff000000;
+    height: 31px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    font-family: font;
+    font-size: 20px;
+}
+
+#myImg:hover {
+   transition: all 1s;
+   scale: 1.2;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  width: 35%;
+  height: 500px;
+  background-color: #1b8e9f;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.input-t{
+   height: 30px;
+   display: table;
+   margin: auto;
+   padding: auto;
+   position: relative;
+   top: -10px;
+   background-color: #30A2FF;
+   border-radius: 12px;
+   border: none;
+   box-shadow: #00000046 2px 2px 9px;
+}
+.input-p{
+   height: 30px;
+   display: table;
+   margin: auto;
+   padding: auto;
+   position: relative;
+   top: -20px;
+   background-color: #30A2FF;
+   border-radius: 12px;
+   border: none;
+   box-shadow: #00000046 2px 2px 9px;
+}
+.h42{
+   position: relative;
+   top: 10px;
+   left: 260px;
+}
+.h43{
+   position: relative;
+   left: 310px;
+}
+.img-1{
+   position: relative;
+   top: 10px;
+   width: 300px;
+   height: 200px;
+   display: table;
+   margin: auto;
+   padding: auto;
+   border-radius: 10px;
+}
+.button-1{
+   width: 150px;
+   height: 50px;
+   background-color: #0D1282;
+   box-shadow: #0330b846 2px 2px 9px;
+   display: table;
+   margin: auto;
+   padding: auto;
+   border-radius: 20px;
+   border: none;
+   color: #fff;
+   font-family: font;
+}
+.button-1 :hover{
+   transition: all 1s;
+   scale: 1.2;
+}
+.a4{
+   position: relative;
+         font-size: 20px;
+         display: inline-block;
+          text-decoration: none;
+}
+</style>
+</head>
+<body>
+   <div class="div-background">
+   <div class="div-header">
+      <div class="div-header3">
+     <span class="span-header">/</span> 
+      <i><a class="a1" href="C:\Users\aa\Downloads\ثبت نام.html">ثبت نام</a></i>
+      </div>
+      <div id="myImg"><span>ورود</span></div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="modal-content" id="img01">
+   <img class="img-1" src="{% static 'home/svg/undraw_secure_login_pdn4.svg'%}">
+   <h4 class="h42">: نام کاربری </h4>
+   <input type="text" class="input-t">
+   <h4 class="h43">:رمز</h4>
+   <input type="password" class="input-p">
+<div class="button-1"><button class="button-1" type="submit">ارسال</button></div>
+
+</div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+// when YOU BUY THE HOST CHANGE THE HREF TO HOST HOME LOCATION!!!!!!
+</script>
+      <div class="div-header4">
+      <i><a class="a4" href="http://127.0.0.1:8000/">رفتن به خانه</a></i>
+      </div>
+<div class="div-header2">
+   <img class="img4" src="{% static 'home/images/favpng_r-logo-icon.png' %}">
+   <h2 class="h2-1">چرا این سایت؟؟؟</h2>
+   <span class="span1"> در این بخش به ویژگی های این سایت می پردازیم<br> و چرایی انتخاب این سایت را بیان می کنیم</span>
+   <img class="img3" src="{% static 'home/svg/undraw_lightbulb_moment_re_ulyo (1).svg' %}">
+</div>
+<div class="div-background1">
+   <svg class="svg1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(51, 190, 245)" fill-opacity="1" d="M0,288L20,282.7C40,277,80,267,120,245.3C160,224,200,192,240,176C280,160,320,160,360,165.3C400,171,440,181,480,160C520,139,560,85,600,64C640,43,680,53,720,69.3C760,85,800,107,840,117.3C880,128,920,128,960,117.3C1000,107,1040,85,1080,69.3C1120,53,1160,43,1200,42.7C1240,43,1280,53,1320,96C1360,139,1400,213,1420,250.7L1440,288L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
+
+<div class="div1"></div>
+<div class="div2"><Img class="img5" src="{% static 'home/images/w.jpg' %}">
+   <div class="div3"><span class="span2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</span></div>
+</div>
+
+   <diV class="div24">
+   <div class="div25"></div>
+   <img class="img6" src="{% static 'home/images/favpng_r-logo-icon.png' %}">
+   <img class="img7" src="{% static 'home/images/0082589_-.webp' %}">
+   <a class="a3" href="https://github.com/">
+   <img class="img8" src="{% static 'home/images/download (3).png '%}"></a>
+   <button class="button2"><a href="#">ایجاد پروفایل</a></button>
+   <button class="button3"><a href="#">ایجاد پروفایل</a></button>
+   <button class="button4"><a href="#">ایجاد پروفایل</a></button>
+   <span class="span8">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,,<br> sed do eiusmod tempor incididunt ut labore,<br> et dolore magna aliqua. Ut enim ad minim veniam,,<br> quis nostrud exercitation ullamco laboris ,<br>nisi ut aliquip ex ea commodo consequat.</span>
+</div>
+</div>
+</body>
+</html>

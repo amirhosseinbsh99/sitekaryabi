@@ -1,0 +1,1133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Document</title>
+   <style>
+      @keyframes anima1 { 
+         0%{rotate: 0deg;left: -350px; top: -80px; opacity: 1;}
+         50%{rotate: 0deg;left: -350px; top: -80px; opacity: 1;}
+         75%{rotate: -360deg;left: -500px; top: -200px; opacity: 0;}
+         100%{opacity: 0;}
+      }
+      @keyframes anima2 { 
+         0%{rotate: 0deg;left: -350px; top: 90px; opacity: 1;}
+         50%{rotate: 0deg;left: -350px; top: 90px; opacity: 1;}
+         75%{rotate: -360deg;left: -500px; top: -200px; opacity: 0;}
+         100%{opacity: 0;}
+      }
+      @font-face {
+         font-family: 'font';
+         src: local('font'),
+         url('../../static/home/font/Mikhak-VF[wght\,KSHD\,DSTY].woff2') format("woff2");
+      }
+      body{
+         font-family: font;
+         margin: 0;
+         padding: 0;
+         
+      }
+      body :link{
+         color: #000000;
+      }
+      body :visited{
+         color: #000000;
+      }
+      /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background-color: #fff;
+  border-radius: 10px;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background-image: linear-gradient(180deg, #93C6E7 40%, #30a2ff 60%);   position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px 1px;
+}
+
+
+      .div-background{
+         position: relative;
+         width: auto;
+         height: 620px;
+         background-color: #30A2FF;
+      }
+      .div-background1{
+         position: relative;
+         width: auto;
+         height: 500px;
+         background-color:#30a2ff;
+      }
+      .div-header{
+         position: absolute;
+         top: -0px;
+         
+         width: 100%;
+         height: 60px;
+         background-color: #93C6E7;
+         border-bottom-left-radius: 40px;
+         border-bottom-right-radius: 40px;
+         box-shadow: rgba(0, 0, 0, 0.314) 0px 0px 15px ;
+   
+      }
+      .div-header1{
+         position: relative;
+         top: 60px;
+         width: 90%;
+         height: 30px;
+         background-color: #9ad7ff;
+         display: table;
+         margin-left: auto;
+         margin-right: auto;
+         border-bottom-left-radius: 40px;
+         border-bottom-right-radius: 40px;
+         box-shadow: rgba(0, 0, 0, 0.314) 0px -5px 29px 6px;
+      }
+      .div-header2{
+         position: relative;
+         top: -70px;
+         width: 100px;
+         height: 40px;
+         text-align: center;
+         display: table;
+         margin-left: auto;
+         margin-right: auto;
+      }
+      .div-header3{
+         position: relative;
+         top: 10px;
+         width: 200px;
+         height: 40px;
+        background-color: #6d96b1;;
+         text-align: center;
+         margin-left: 30px;
+         border-radius: 20px;
+         box-shadow: #00000055 0px 0px 5px;
+
+      }
+      .a1 {
+         font-size: 20px;
+         position: relative;
+         left: 15px;
+         top: 3px;
+         display: inline-block;
+          text-decoration: none;
+}
+.a-1 {
+         font-size: 20px;
+         position: relative;
+         left: -5px;
+         display: inline-block;
+          text-decoration: none;
+}
+.i-1 :hover{
+   transition: all 1s;
+   scale: 1.2;
+}
+
+.a2 {
+         display: inline-block;
+          text-decoration: none;
+          padding-left: 105px;
+}
+
+.span-header{
+   position: relative;
+   top: 7px;
+   font-size: 20px;
+   left: -20px;
+}
+.div-header4{
+         position: relative;
+         display: inline-block;
+         top: -30px;
+         left: 1080px;
+         width: 200px;
+         height: 40px;
+         background-color: #6d96b1;
+         text-align: center;
+         margin-left: 30px;
+         border-radius: 20px;
+         box-shadow: #00000055 0px 0px 5px;
+}
+
+a{
+   text-decoration: none;
+}
+.a2 :hover{
+   display: inline-block;
+   background-color: #93C6E7;
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+.img3{
+   position: relative;
+   left: 55%;
+   width: 40%;
+   height: 450px;
+}
+
+
+.span1{
+   position: relative;
+   top: -270px;
+   right: 200px;
+   font-size: 40px;
+   
+}
+.span2{
+   position: relative;
+   top: -270px;
+   left: 260px;
+   font-size: 25px;
+}
+.span3{
+   position: relative;
+   top: -270px;
+   left: 200px;
+   font-size: 25px;
+}
+.span4{
+   position: relative;
+   top: -270px;
+   left: 220px;
+   font-size: 25px;
+}
+
+   .button1{
+   position: relative;
+   top: -220px;
+   right: 120px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.button2{
+   position: relative;
+   top: 180px;
+   left: 50px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.button3{
+   position: relative;
+   top: 180px;
+   left: 100px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.button4{
+   position: relative;
+   top: 180px;
+   left: 150px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.div1{
+   position: relative;
+    top: -200px;
+   width: auto;
+   height: 1100px;
+   background-image: linear-gradient(180deg, #c81f82 10%, #1C6DD0 90%); 
+   position: relative;
+   position: relative;
+   
+}
+.div5{
+   width: 400px;
+   height: 270px;
+   position: relative;
+   transform: translate(0px, -100px);
+   left: 850px;
+   border-radius: 20px;
+   box-shadow: #0000004c 1px 1px 6px;
+   z-index: 1;
+}
+.im-1{
+   transform: translate(10px, -40px);
+   width: 380px;
+   height: 250px;
+   border-radius: 20px;
+   box-shadow: 0px 0px 20px 10px;
+}
+#i1{
+   position: relative;
+   top: 100px;
+   display: table;
+   margin: auto;
+   padding: auto;
+
+}
+#i2{
+   position: relative;
+   top: -300px;
+   right: 40px;
+   display: table;
+   margin: auto;
+   padding: auto;
+}
+.div6{
+   position: relative;
+   top: -365px;
+   left: 150px;
+   width: 70px;
+   height: 70px;
+   background-color: #6d96b1;
+   border-radius: 10%;
+}
+.div7{
+   position: relative;
+   top: -365px;
+   left: 250px;
+   width: 70px;
+   height: 70px;
+   background-color: #6d96b1;
+   border-radius: 10%;
+}
+.div8{
+   position: relative;
+   top: -365px;
+   left: 350px;
+   width: 70px;
+   height: 70px;
+   background-color: #6d96b1;
+   border-radius: 10%;
+}
+.div9{
+   position: relative;
+   top: -570px;
+   left: 450px;
+   width: 70px;
+   height: 70px;
+   background-color: #6d96b1;
+   border-radius: 10%;
+}
+.div10{
+   position: relative;
+   top: -570px;
+   left: 550px;
+   width: 70px;
+   height: 70px;
+   background-color: #6d96b1;
+   border-radius: 10%;
+}
+.div11{
+   position: relative;
+   top: -570px;
+   left: 650px;
+   width: 70px;
+   height: 70px;
+   background-color: #6d96b1;
+   border-radius: 10%;
+}
+.div12{
+   position: relative;
+   top: -565px;
+   left: 300px;
+   width: 15%;
+   height: 40px;
+   background-color: #30A2FF;
+   border-radius: 20px;
+}
+.h41{
+   text-align: center;
+}
+.div13{
+   width: 80%;
+   height: 400px;
+   background-color: #57b5e4;
+   position: relative;
+   display: table;
+   margin: auto;
+   padding: auto;
+   top: -800px;
+   border-radius: 20px;
+
+}
+.div14{
+   width: 80%;
+   height: 400px;
+   background-color: #4193bb;
+   position: relative;
+   display: table;
+   margin: auto;
+   padding: auto;
+   top: -400px;
+   transform: rotate(-3deg);
+   border-radius: 20px;
+}
+.div15{
+   width: 200px;
+   height: 250px;
+   background-image: linear-gradient(180deg, #516BEB, #5ed2c8);   position: relative;
+   display: table;
+   margin: auto;
+   padding: auto;
+   top: -1070px;
+   left: 420px;
+   border-radius: 15px;
+}
+.div16{
+   width: 200px;
+   height: 250px;
+   background-image: linear-gradient(180deg, #516BEB, #5ed2c8);   position: relative;
+   display: table;
+   margin: auto;
+   padding: auto;
+   top: -1330px;
+   left: 210px;
+   border-radius: 15px;
+}
+.div17{
+   width: 200px;
+   height: 250px;
+   background-image: linear-gradient(180deg, #516BEB, #5ed2c8);   position: relative;
+   display: table;
+   margin: auto;
+   padding: auto;
+   top: -1590px;
+   left: 0px;
+   border-radius: 15px;
+}
+.div18{
+   width: 200px;
+   height: 250px;
+   background-image: linear-gradient(180deg, #516BEB, #5ed2c8);   position: relative;
+   display: table;
+   margin: auto;
+   padding: auto;
+   top: -1850px;
+   left: -210px;
+   border-radius: 15px;
+}
+.div19{
+   width: 200px;
+   height: 250px;
+   background-image: linear-gradient(180deg, #516BEB, #5ed2c8);
+   position: relative;
+   display: table;
+   margin: auto;
+   padding: auto;
+   top: -2110px;
+   left: -420px;
+   border-radius: 15px;
+}
+.span5{
+position: relative;
+left: 350px;
+top: 40px;
+font-size: 30px;
+}
+.img4{
+   width: 50px;
+   height: 60px;
+   position: relative;
+   top: -10px;
+}
+.img5{
+   width: 170px;
+   height: 120px;
+   margin: auto;
+   display: table;
+   padding: auto;
+   margin-top: 10px;
+   border-radius: 20px;
+}
+.div20{
+   position: relative;
+    top: -200px;
+   width: auto;
+   height: 1300px;
+   background-image: linear-gradient(180deg, #82b6c4, #23a763 70%, #ffffff);
+position: relative;
+
+}
+.div25{
+   width: auto;
+   height: 100px;
+   background-color: #0D1282;
+   transform: translate(0px, 400px);
+}
+.div24{
+   width: auto;
+   height: 400px;
+   background-image: linear-gradient(180deg, #252525, #0D1282);
+   transform: translate(0px, -300px);
+}
+.img6{
+   width: 50px;
+   height: 60px;
+   position: relative;
+   left: 650px;
+   top: -150px;
+}
+.button2{
+   position: relative;
+   top: 150px;
+   left: 50px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.button3{
+   position: relative;
+   top: 150px;
+   left: 100px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.button4{
+   position: relative;
+   top: 150px;
+   left: 150px;
+   width: 170px;
+   height: 40px;
+   background-color: #6d96b1;
+   border: none;
+   box-shadow: #0000004c 0px 0px 6px;
+   border-radius: 20px;
+   font-size: 20px;
+   font-family: font;
+}
+.span8{
+   display: table;
+   margin: auto;
+   padding: auto;
+   direction: rtl;
+   position: relative;
+   top: -130px;
+   left: 300px;
+   color: #fff;
+}
+.img8{
+   position: relative;
+top: 190px;
+right: 150px;
+   width: 80px;
+   height: 80px;
+}
+.a3 :hover{
+   transition: all 1.5s;
+   scale: 1.2;
+}
+.div21{
+   color: #f1f1f1;
+   width: 400px;
+   height: 150px;
+   background-color: #1c1e1f;
+   margin: auto;
+   display: table;
+   padding: auto;
+   position: relative;
+   right: 350px;
+   border-radius: 20px;
+   top: 90px;
+   animation-name: anima2;
+   animation-duration:3s;
+   animation-delay: 8s;
+   animation-iteration-count: infinite;
+   padding: 10px;
+}
+.div22{
+   width: 400px;
+   height: 150px;
+   background-color: #68B0AB;
+   margin: auto;
+   display: table;
+   padding: auto;
+   position: relative;
+   top: -80px;
+   right: 350px;
+   border-radius: 20px;
+   transform: rotate(-3deg);
+   animation-name: anima1;
+   animation-duration: 3s;
+   animation-delay: 4s;
+   animation-iteration-count: infinite;
+   padding: 10px;
+}
+.span6{
+   position: relative;
+   left: 750px;
+   top: -230px;
+   font-size: 30px;
+}
+.span7{
+   position: relative;
+   left: 750px;
+   top: -225px;
+}
+.div23{
+   width: 90%;
+   height: 500px;
+   background-image: linear-gradient(180deg, #82eefd, #2df558);
+   position: relative;
+   display: table;
+   margin: auto;
+   padding: auto;
+   top: -50px;
+   border-radius: 20px;
+   text-align: center;
+}
+.div24{
+   width: auto;
+   height: 400px;
+   background-image: linear-gradient(180deg, #252525, #0D1282);
+   transform: translate(0px, -100px);
+}
+
+.span8{
+   display: table;
+   margin: auto;
+   padding: auto;
+   direction: rtl;
+   position: relative;
+   top: -130px;
+   left: 300px;
+   color: #fff;
+}
+.img7{
+   width: 200px;
+   height: 170px;
+   border-radius: 20%;
+   position: relative;
+}
+#myImg {
+   left: 70px;
+    top: -17px;
+    position: relative;
+    width: 55px;
+    background-color: #ff000000;
+    height: 31px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    font-family: font;
+    font-size: 20px;
+}
+
+#myImg:hover {
+   transition: all 1s;
+   scale: 1.2;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  width: 35%;
+  height: 500px;
+  background-color: #1b8e9f;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+.input-t{
+   height: 30px;
+   display: table;
+   margin: auto;
+   padding: auto;
+   position: relative;
+   top: -10px;
+   background-color: #30A2FF;
+   border-radius: 12px;
+   border: none;
+   box-shadow: #00000046 2px 2px 9px;
+}
+.input-p{
+   height: 30px;
+   display: table;
+   margin: auto;
+   padding: auto;
+   position: relative;
+   top: -20px;
+   background-color: #30A2FF;
+   border-radius: 12px;
+   border: none;
+   box-shadow: #00000046 2px 2px 9px;
+}
+.h42{
+   position: relative;
+   top: 10px;
+   left: 260px;
+}
+.h43{
+   position: relative;
+   left: 310px;
+}
+.img-1{
+   position: relative;
+   top: 10px;
+   width: 300px;
+   height: 200px;
+   display: table;
+   margin: auto;
+   padding: auto;
+   border-radius: 10px;
+}
+.button-1{
+   width: 150px;
+   height: 50px;
+   background-color: #0D1282;
+   box-shadow: #0330b846 2px 2px 9px;
+   display: table;
+   margin: auto;
+   padding: auto;
+   border-radius: 20px;
+   border: none;
+   color: #fff;
+   font-family: font;
+}
+.button-1 :hover{
+   transition: all 1s;
+   scale: 1.2;
+}
+
+
+/* Set a style for all buttons */
+#bt-2 {
+  position: relative;
+  top: -30px;
+  border-radius: 5px;
+  background-color: #0D1282;
+  box-shadow: #0330b846 2px 2px 9px;
+  color: white;
+  border: none;
+  opacity: 0.9;
+  height: 30px;
+}
+.clearfix :hover{
+   transition: all 1s;
+   scale: 1.2;
+}
+.bt-1 {
+   position: relative;
+   top: -68px;
+   left: 100px;
+  background-color: #04aa6d00;
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 20px;
+  font-family: font;
+  z-index: 1;
+
+}
+
+.bt-1:hover {
+  transition: all 1s;
+  scale: 1.2;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #0890ff;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f9f9f9;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.clearfix{
+   position: relative;
+   top: 60px;
+   left: 50px;
+   margin: auto;
+   padding: auto;
+   display: table;
+   width: 40%;
+   height: 30px;
+   position: relative;
+   top: -180px;
+
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+.inp-1{
+   background-color: #14568b;
+   border: none;
+   border-radius: 20px;
+   width: 200px;
+   height: 25px;
+   margin: auto;
+   padding: auto;
+   display: table;
+   position: relative;
+   top: -200px;
+}
+.spa-1{
+   position: relative;
+   top: -200px;
+   padding-top: 20px;
+   margin: auto;
+   padding: auto;
+   display: table;
+}
+.img11{
+   position: relative;
+   top: -90px;
+   margin: auto;
+   padding: auto;
+   display: table;
+   width: 60%;
+   height: 400px;
+}
+.inp-ch{
+   position: relative;
+   right: 10px;
+   top: -170px;
+   scale: 1.4;
+}
+.inp-ch1{
+   position: relative;
+   left: 320px;
+   top: -170px;
+   scale: 1.4;
+}
+.span-profile-1{
+   position: relative;
+   left: 150px;
+   top: -175px;
+}
+.span-profile-2{
+   position: relative;
+   top: -175px;
+}
+   </style>
+</head>
+<body>
+   
+   <div class="div-background">
+      <div class="div-background1">
+      <div class="div-header1">
+         <i class="a2"><a  href="qac">سوالات و نظرات</a></i>
+         <i class="a2"><a  href="my_funds">سرمایه های من</a></i>
+         <i class="a2"><a  href="my_investments">سرمایه گذاری ها</a></i>
+         <i class="a2"><a  href="tutorial">آموزش ها</a></i>
+         <i class="a2"><a  href="chat">چت</a></i>
+         <i class="a2"><a  href="my_saves">ذهیره های من</a></i>
+         <!-- for login or register message -->
+         {% if messages %}
+         
+         <ul class="message">
+           {% for message in messages %}
+             <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    
+           {% endfor %}
+         </ul>
+       {% endif %}
+      </div>
+
+<div>
+   {%if not request.user.is_authenticated%}
+   <div  id="myImg" ><span>ورود</span></div>
+   <!-- The Modal -->
+   
+   <div id="myModal" class="modal">
+     <span class="close1">&times;</span>
+     <div class="modal-content" id="img01">
+      <img class="img-1" src="{% static 'home/svg/undraw_secure_login_pdn4.svg' %}">
+      
+      <form method="POST" class="" action="accounts/login"> 
+         {% csrf_token %}
+      <h4 class="h42">: نام کاربری </h4>
+      <input type="text" class="input-t" name="username">
+      <h4 class="h43">:رمز</h4>
+      <input type="password" class="input-p" name="password">
+   <div class="button-1"><button class="button-1" type="submit">ارسال</button></div>
+
+         </form> 
+   </div>
+    
+   </div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+
+  var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+}
+</script>
+</div>
+<div>
+<button class="bt-1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">ثبت نام</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form method="POST" class="modal-content" action="accounts/register"> 
+   {% csrf_token %}
+    <div class="container">
+      <img class="img11" src="{% static 'home/svg/undraw_sign_up_n6im.svg' %}">
+      <span class="spa-1" for="email"><b>ایمیل</b></span>   
+      <input class="inp-1" type="email" placeholder="Enter Email" name="email" required>
+      
+      <label class="spa-1" for="psw"><b>پسورد</b></label>
+      <input class="inp-1" type="password" placeholder="Enter Password" name="psw" required>
+
+      <label class="spa-1" for="psw-repeat"><b> تکرار پسورد</b></label>
+      <input class="inp-1" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+
+    <input class="inp-ch" name="sp" type="checkbox" value="True" oninvalid="this.setCustomValidity('لطفا یکی از گزینه ها را انتخاب کنید')" ><span class="span-profile-1" >ساخت پروفایل شخصی </span>
+    <input class="inp-ch1" name="pp" type="checkbox" value="True"  oninvalid="this.setCustomValidity('لطفا یکی از گزینه ها را انتخاب کنید')"><span class="span-profile-2">ساخت پروفایل استارتاپی</span>
+
+
+
+      <div class="clearfix">
+      <button id="bt-2" type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+{% endif %}
+
+   {%if request.user.is_authenticated%}
+
+   <a class="bt-1" href="accounts/logout" style="width:auto; "></a> 
+   <span class="bt-1"style="width:auto;">خروج</span>
+   {% endif %}
+     
+   
+
+   <div class="div-header">
+      <div class="div-header3">
+   
+     <span class="span-header">/</span> 
+      </div>
+      <div class="div-header4">
+      <i class="i-1"><a class="a-1" href="why_this_site">چرا این سایت؟؟؟</a></i>
+      </div>
+<div class="div-header2">
+   <img class="img4" src="{% static 'home/images/favpng_r-logo-icon.png' %}">
+</div>
+<div>
+   <img class="img3" src="{% static 'home/svg/undraw_lightbulb_moment_re_ulyo (1).svg' %}">
+   <span class="span1">سایت کاریابی</span>
+   <br><br>
+   <span class="span2"> سایت ...... در نظر دارد تا ایده های ناب شما را </span>
+      <span class="span3">  <br>برای ایجاد سرمایه و ایجاد استارتاپی نوین برای استارتاپ ها </span>
+         <span class="span4"> <br>.و سرمایه گذار ها نشان داده و شما را وارد بازار کار کند</span>
+         <button class="button1"><a href="C:\Users\aa\Downloads\ثبت نام.html">ایجاد پروفایل</a></button>
+         <div class="div1">
+            <img src="{% static 'home/svg/wave.svg' %}">
+            <div class="div5"><i id="i1" class="fa fa-toggle-right" style="font-size:50px"></i><img class="im-1" src="{% static 'home/images/Screenshot (764).png' %}"></div>
+            <div class="div6"></div>
+            <div class="div7"></div>
+            <div class="div8"></div>
+            <div class="div9"></div>
+            <div class="div10"></div>
+            <div class="div11"></div>
+            <div class="div12"><a href="C:\Users\aa\Downloads\ثبت نام.html"><h4 class="h41">!همین حالا شروع کن</h4></a></div>
+            <div class="div14"></div>
+            <div class="div13"><span class="span5">مواردی شگفت انگیز از سایت</span></div>
+            <div class="div15"><Img class="img5" src="{% static 'home/images/images (1).jpg' %}"><span class="img5">skdkdd</span></div>
+            <div class="div16"><Img class="img5" src="{% static 'home/images/images (2).jpg' %}"><span class="img5">skdkdd</span></div>
+            <div class="div17"><Img class="img5" src="{% static 'home/images/images (3).jpg' %}"><span class="img5">skdkdd</span></div>
+            <div class="div18"><Img class="img5" src="{% static 'home/images/images (4).jpg' %}"><span class="img5">skdkdd</span></div>
+            <div class="div19"><Img class="img5" src="{% static 'home/images/images (5).jpg' %}"><span class="img5">skdkdd</span></div>
+         </div>
+         <div class="div20">
+         <Img src="{% static 'home/svg/wave (1).svg' %}">
+       <div class="div21"><span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </span></div>
+       <div class="div22"><span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </span></div>
+           <span class="span6">در مورد ....... ، چه می شنویم؟؟؟</span><br><span class="span7"> following example shows<br> how to use angles on linear gradients</span>
+           <i id="i2" class="fa fa-exchange" style="font-size:50px"></i>
+         <div class="div23"></div>
+         </div>
+         <diV class="div24">
+         <div class="div25"></div>
+         <img class="img6" src="{% static 'home/images/favpng_r-logo-icon.png' %}">
+         <img class="img7" src="{% static 'home/images/0082589_-.webp' %}">
+         <a class="a3" href="https://github.com/">
+            <img class="img8" src="{% static 'home/images/download (3).png' %}"></a>
+         <button class="button2"><a href="#">ایجاد پروفایل</a></button>
+         <button class="button3"><a href="#">ایجاد پروفایل</a></button>
+         <button class="button4"><a href="#">ایجاد پروفایل</a></button>
+         <span class="span8">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,,<br> sed do eiusmod tempor incididunt ut labore,<br> et dolore magna aliqua. Ut enim ad minim veniam,,<br> quis nostrud exercitation ullamco laboris ,<br>nisi ut aliquip ex ea commodo consequat.</span>
+          
+      </diV>
+
+</div>
+
+</body>
+</html>

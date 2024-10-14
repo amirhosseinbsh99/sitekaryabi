@@ -1,0 +1,294 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+      @font-face {
+   font-family: font;
+   src: local('font'),
+         url('../../static/home/font/Mikhak-VF[wght\,KSHD\,DSTY].woff2') format("woff2");
+}
+ body{
+   font-family: font;
+   margin: 0;
+   padding: 0;
+   
+}
+body :link{
+   color: #000000;
+}
+body :visited{
+   color: #000000;
+}
+/* width */
+::-webkit-scrollbar {
+width: 15px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background-color: #83e4ff;
+border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background-image: linear-gradient(180deg, #93C6E7 40%, #30a2ff 60%); 
+position: relative;
+border-radius: 10px;
+box-shadow: 0px 0px 17px 1px;
+}
+.background{
+width: auto;
+height: 657px;
+background-image: linear-gradient(180deg, #93dce7 40%, #e8da80 60%); 
+position: relative;
+}
+.div-header{
+   position: absolute;
+   top: -0px;
+   
+   width: 100%;
+   height: 60px;
+   background-color: #93C6E7;
+   border-bottom-left-radius: 40px;
+   border-bottom-right-radius: 40px;
+   box-shadow: rgba(0, 0, 0, 0.314) 0px 0px 15px ;
+
+}
+.div-header2{
+   position: relative;
+   top: -70px;
+   width: 100px;
+   height: 40px;
+   text-align: center;
+   display: table;
+   margin-left: auto;
+   margin-right: auto;
+}
+.div-header3{
+   position: relative;
+   top: 10px;
+   width: 200px;
+   height: 40px;
+  background-color: #6d96b1;;
+   text-align: center;
+   margin-left: 30px;
+   border-radius: 20px;
+   box-shadow: #00000055 0px 0px 5px;
+
+}
+.a1 {
+   font-size: 20px;
+   position: relative;
+   left: 15px;
+   top: -5px;
+   font-family: font;
+   display: inline-block;
+    text-decoration: none;
+}
+.span-header :hover{
+transition: all 1s;
+scale: 1.2;
+}
+.a-1 {
+   font-size: 20px;
+   position: relative;
+   left: -5px;
+   display: inline-block;
+    text-decoration: none;
+}
+.i-1 :hover{
+transition: all 1s;
+scale: 1.2;
+}
+.span-header{
+position: relative;
+top: 7px;
+font-size: 20px;
+left: -20px;
+}
+.div-header4{
+   position: relative;
+   display: inline-block;
+   top: -30px;
+   left: 1080px;
+   width: 200px;
+   height: 40px;
+   background-color: #6d96b1;
+   text-align: center;
+   margin-left: 30px;
+   border-radius: 20px;
+   box-shadow: #00000055 0px 0px 5px;
+}
+.img4{
+width: 50px;
+height: 60px;
+position: relative;
+top: -10px;
+}
+.div-1{
+position: relative;
+top: -70px;
+margin: auto;
+padding: auto;
+width: 90%;
+height: 570px;
+background-image: linear-gradient(180deg, #2d81ff 10%, #16fdda 90%);
+position: relative;
+border-radius: 20px;
+box-shadow: #00000055 0px 0px 5px;
+}
+.div-2{
+position: relative;
+left: 848px;
+border-radius: 20px;
+display: inline-block;
+width: 30%;
+height: 570px;
+background-color: #ff2be35a;
+}
+.textarea-1{
+display: inline-block;
+margin: auto;
+padding: auto;
+width: 30%;
+height: 200px;
+background-image: linear-gradient(180deg, #0700c7 10%, #000000 90%);
+position: relative;
+top: -200px;
+right: 300px;
+border: none;
+direction: rtl;
+font-size: 20px;
+font-family: font;
+padding: 20px;
+border-radius: 30px;
+color: #fff;
+}
+.botton-1{
+font-size: 25px;
+position: relative;
+top: -80px;
+right: 450px;
+width: 150px;
+height: 50px;
+border-radius: 30px;
+border: 2px solid rgba(54, 228, 156, 0.481);
+background-color: rgb(203, 11, 114);
+box-shadow: inset -4px -5px 20px 0px;
+}
+#a1 :hover{
+transition:all 1s ;
+transform: scale(1.2);
+}
+.div-8 {
+   overflow-x: hidden;
+   display: inline-block;
+   margin: auto;
+   padding: auto;
+   border-radius: 20px;
+   width: 100%;
+   height: 100%;
+   background-color: #00000051;
+   box-shadow:  rgb(0, 0, 0) 0px -4px 20px 0px;
+}
+h3{
+   text-align: center;
+   margin: 10px;
+}
+p{
+   color: #ffffff;
+   text-align: center;
+}
+hr{
+   border: 1px dotted rgba(0, 0, 0, 0.618);
+}
+.inp-search{
+   position: relative;
+   top: 5px;
+   width: 352px;
+   height: 40px;
+   font-family: font;
+   background-image: linear-gradient(180deg, #2d81ff 10%, #16fdda 90%);
+   border: none;
+   outline: none;
+   direction: rtl;
+   font-size: 20px;
+   padding: 10px;
+   padding-right: 60px;
+   border-radius: 20px;
+   box-shadow: 1px 0px 9px;
+   }
+   </style>
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="سوالات ونظرات.css">
+
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="background">
+   <div class="div-header">
+      <div class="div-header3">  
+     <span class="span-header"><a class="a1" href="accounts/edit_profile">پروفایل</a></span> 
+      </div>
+      <div class="div-header4">
+      <i class="i-1"><a class="a-1" href="/accounts/dashboard">رفتن به خانه  </a></i>
+      </div>
+      <div class="div-header4">
+         <i><a class="a-1" href="/accounts/logout">خروج  </a></i>
+      </div>
+      {% if messages %}
+<ul class="messages" style="text-align:right;direction: rtl;">
+    {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<div class="div-header2">
+   <img class="img4" src="{% static 'home/images/favpng_r-logo-icon.png' %}">
+</div>
+<form action="" method="POST" id="main_form" > 
+<div class="div-1">
+   <div class="div-2">                     
+      <div class="div-8">
+
+         <form action="comment" method="post">
+
+            {% csrf_token %}
+            <input class="inp-search"  name="q" type="search" placeholder="نوار جستجو..." class="fa fa-search">
+
+         {% for comment in comments %}
+   
+            <div class="comments" style="padding: 10px;text-align: right;">
+   
+            <h3> {{comment.Username}}    </h3>
+   
+   
+            <p id="p">{{ comment.body | linebreaks }}</p>
+   
+            <hr>
+              </div>
+          {% endfor %}
+   
+   
+      </div>
+   </div>
+   
+   <textarea name="comment_content" class="textarea-1" placeholder="نظرات خود را در باکس زیر وارد نمایید..."></textarea>
+   <a id="a1" href="comment"><button class="botton-1" type="submit">ثبت نظر</button></a>
+   </form>
+
+
+</div>
+</div>
+</div>
+</body>
+</html>
